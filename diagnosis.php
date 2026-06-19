@@ -187,8 +187,8 @@ function renderPertanyaan($row) {
                 <input type="radio" name="gejala[<?php echo $row['id_gejala']; ?>]" value="0.4" class="w-5 h-5 text-green-600 accent-green-600">
                 <span>Kurang Yakin</span>
             </label>
-            <label class="flex items-center space-x-3 p-2 rounded-lg hover:bg-red-50 active:bg-red-100 transition border border-transparent cursor-pointer text-sm text-red-600 font-medium bg-red-50">
-                <input type="radio" name="gejala[<?php echo $row['id_gejala']; ?>]" value="0" class="w-5 h-5 text-red-500 accent-red-600" checked>
+            <label class="flex items-center space-x-3 p-2 rounded-lg hover:bg-green-50 active:bg-green-100 transition border border-transparent cursor-pointer text-sm">
+                <input type="radio" name="gejala[<?php echo $row['id_gejala']; ?>]" value="0" class="w-5 h-5 text-green-600 accent-green-600">
                 <span>Tidak (Sama Sekali Tidak Terjadi)</span>
             </label>
         </div>
