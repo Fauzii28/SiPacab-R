@@ -38,7 +38,6 @@
             
             <div class="bg-green-100 rounded-2xl p-6 mb-6 text-center border-2 border-green-200 shadow-sm relative overflow-hidden">
                 <h2 class="text-xl font-bold text-green-800 mb-2 relative z-10">Deteksi Dini, Diagnosa Pasti, Rawit Terlindungi</h2>
-                <img src="https://cdni.iconscout.com/illustration/premium/thumb/farmer-checking-plant-illustration-download-in-svg-png-gif-file-formats--growth-agriculture-care-nature-pack-and-illustrations-4713589.png" alt="Farmer" class="w-48 mx-auto mb-4 relative z-10 drop-shadow-md">
                 
                 <a href="diagnosis.php" class="relative z-10 block w-full bg-green-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-700 active:bg-green-800 transition-all shadow-lg active:scale-95 text-center text-lg tracking-wide">
                     Ayo Diagnosis
