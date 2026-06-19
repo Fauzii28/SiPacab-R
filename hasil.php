@@ -46,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['gejala'])) {
                 'latin' => $p['nama_latin'],
                 'persentase' => round($cf_old * 100, 2),
                 'deskripsi' => $p['deskripsi'],
-                'solusi' => $p['solusi']
+                'solusi' => $p['solusi'],
+                'gambar' => $p['gambar']
             ];
         }
     }
@@ -82,6 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['gejala'])) {
                     <p class="text-gray-500 text-sm">Berdasarkan gejala yang dipilih, tanaman Anda didiagnosa:</p>
                     <h2 class="text-3xl font-bold text-red-600 mt-2"><?php echo $hasil_diagnosis[0]['nama']; ?></h2>
                     <p class="italic text-gray-400 text-sm">(<?php echo $hasil_diagnosis[0]['latin']; ?>)</p>
+                    <div class="flex justify-center my-6">
+                    <div class="w-48 h-48 rounded-2xl overflow-hidden shadow-md border-4 border-white bg-gray-100">
+                    <img src="assets/img/<?php echo $hasil_diagnosis[0]['gambar']; ?>" alt="Foto Penyakit" class="w-full h-full object-cover">
+                        </div>
+                    </div>
                     
                     <div class="mt-4 bg-green-100 rounded-full h-4 overflow-hidden border border-green-200">
                         <div class="bg-green-600 h-full" style="width: <?php echo $hasil_diagnosis[0]['persentase']; ?>%"></div>
